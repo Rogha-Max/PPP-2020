@@ -1,0 +1,37 @@
+label,
+legend {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  border: 1px black;
+  border-style: solid;
+  margin: 10px;
+}
+
+input {
+  margin: 5px;
+}
+
+input:hover {
+  margin: 5px;
+}
+
+input:only-of-type {
+  background: #6daadf;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  display: block;
+  margin: auto;
+
+}
+
+input:only-of-type:hover {
+  background: lightgrey;
+  color: black
+}
+
+form {
+  margin-top: 35px;
+}

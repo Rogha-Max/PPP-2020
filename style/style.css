@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Rockwell";
+  src: url(../medias/fonts/Rockwell.TTF);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rockwell";
+  background-color: white;
+  
+
+}
+
+/*Header*/
+header {
+  min-width: 5vh;
+  max-height: 9vh;
+  border-bottom: solid;
+  margin-bottom: 2vh;
+  text-align: right;
+
+}
+
+header img {
+  min-width: 15vw;
+  min-height: 5vh;
+  max-height: 8vh;
+}
+
+
+body {
+  background-image: url(../medias/images/board-2440249_1280.jpg);
+
+}
+
+/*main*/
+main {
+  margin: 4vh;
+  border: 1.2px solid black;
+  border-radius: 40px;
+  color: rgb(0, 0, 0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.95;
+  
+}
+
+h2 {
+  text-align: center;
+}
+
+h1 {
+  padding-top: 1vh;
+  width: 80vw;
+  margin: auto;
+  text-align: center;
+}
+
+a>img {
+  height: 120px;
+  width: 120px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+table,
+th,
+tr,
+td {
+  border: 1px solid black;
+  border-spacing: 0px;
+}
+
+table {
+  width: 100%
+}
+
+table>tr {
+  width: 1fr;
+  max-height: 5vh;
+}
+
+table td:nth-of-type(3) {
+  background-image: url("../medias/images/illustrations/powered_by.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

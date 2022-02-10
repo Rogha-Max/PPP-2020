@@ -1,0 +1,133 @@
+iframe {
+  height: 400px;
+  width: 80%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas:
+    ". fiche"
+    "bulle1 fiche"
+    "bulle2 fiche"
+    "bulle3 fiche"
+    "bulle4 fiche"
+    "bulle5 fiche"
+    "bulle6 fiche"
+    ". fiche";
+  place-items: center;
+  margin: 4vh;
+}
+
+main>section {
+  grid-area: fiche;
+}
+
+main>a:nth-of-type(1) {
+  grid-area: bulle1;
+}
+
+main>a:nth-of-type(2) {
+  grid-area: bulle2;
+}
+
+main>a:nth-of-type(3) {
+  grid-area: bulle3;
+}
+
+main>a:nth-of-type(4) {
+  grid-area: bulle4;
+}
+
+main>a:nth-of-type(5) {
+  grid-area: bulle5;
+}
+
+main>a:nth-of-type(6) {
+  grid-area: bulle6;
+}
+
+main>a>img {
+  clip-path: circle(50%);
+  margin: 0.5vw 1vh;
+}
+
+#m1 {
+  grid-area: fiche;
+}
+
+#m2 {
+  grid-area: fiche;
+}
+
+#m3 {
+  grid-area: fiche;
+}
+
+#m4 {
+  grid-area: fiche;
+}
+
+#m5 {
+  grid-area: fiche;
+}
+
+#m6 {
+  grid-area: fiche;
+}
+
+section {
+  display: none;
+  grid-template-columns: 3fr 2fr 3fr;
+  grid-template-rows: 1fr 1fr 6fr;
+  grid-template-areas:
+    "imageMetier titre logos"
+    "imageMetier description description"
+    "metier metier metier";
+  width: 100%;
+  height: 95%;
+  place-items: center;
+  margin-right: 40px;
+  padding: 5vh 5vw;
+}
+
+section>img {
+  grid-area: imageMetier;
+  width: 20vw;
+  height: 20vh;
+  clip-path: circle(30%);
+}
+
+section>h2 {
+  grid-area: titre;
+}
+
+section>p {
+  grid-area: logos;
+  display: inline;
+}
+
+p>img {
+  max-width: 8vw;
+}
+
+section>article:nth-of-type(1) {
+  grid-area: description;
+  height: 100%;
+  width: 100%;
+}
+
+section>article:nth-of-type(2) {
+  grid-area: metier;
+  height: 100%;
+  width: 100%;
+}
+
+article>p {
+  text-indent: 2vw;
+}
+
+section:target {
+  display: grid;
+}
